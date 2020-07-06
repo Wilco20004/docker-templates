@@ -12,31 +12,43 @@
   <Privileged>false</Privileged>
   <Environment>
     <Variable>
-      <Name>SERVERNAME</Name>
+      <Name>Server Name</Name>
+      <Key>SERVERNAME</Key>
       <Value>Test Server</Value>
+      <Description>The name of the server your players will see in ark</Description>
     </Variable>
     <Variable>
-      <Name>SERVERMAP</Name>
+      <Name>Server Map</Name>
+      <Key>SERVERMAP</Key>
       <Value>TheIsland</Value>
+      <Description>The map of the server your players will play in ark</Description>
     </Variable>
     <Variable>
-      <Name>SERVERPASSWORD</Name>
+      <Name>Server Password</Name>
+      <Key>SERVERPASSWORD</Key>
       <Value>Your Password</Value>
+      <Description>The password your players would need to enter your server (optional)</Description>
     </Variable>
     <Variable>
       <Name>ADMINPASSWORD</Name>
+      <Key>SERVERPASSWORD</Key>
       <Value>Your Password</Value>
+      <Description>Your Admin password</Description>
     </Variable>
     <Variable>
-      <Name>MAX_PLAYERS</Name>
+      <Name>Max Players</Name>
+      <Key>MAX_PLAYERS</Key>
       <Value>30</Value>
+      <Description>The max players for your map</Description>
     </Variable>
     <Variable>
       <Name>PUID</Name>
+      <Key>PUID</Key>
       <Value>1000</Value>
     </Variable>
     <Variable>
       <Name>PGID</Name>
+      <Key>PGID</Key>
       <Value>1000</Value>
     </Variable>
   </Environment>
@@ -44,21 +56,25 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
+        <Name>Game Port</Name>
         <HostPort>7777</HostPort>
         <ContainerPort>7777</ContainerPort>
         <Protocol>udp</Protocol>
       </Port>
       <Port>
+        <Name>Raw socket port</Name>
         <HostPort>7778</HostPort>
         <ContainerPort>7778</ContainerPort>
         <Protocol>udp</Protocol>
       </Port>
       <Port>
+        <Name>Rcon port</Name>
         <HostPort>27015</HostPort>
         <ContainerPort>27015</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
+        <Name>query port</Name>
         <HostPort>27015</HostPort>
         <ContainerPort>27015</ContainerPort>
         <Protocol>udp</Protocol>
