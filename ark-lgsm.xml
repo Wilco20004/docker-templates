@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <TemplateURL>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/sonarr.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/Wilco20004/docker-templates/master/ark-lgsm.xml</TemplateURL>
   <Beta>False</Beta>
   <Date>2020/07/06</Date>
+  <Name>LGSMArkServer</Name>
+  <Project>http://www.survivetheark.com/</Project>
   <Support></Support>
   <Description>basic ark server</Description>
   <Project>https://sonarr.tv/</Project>
