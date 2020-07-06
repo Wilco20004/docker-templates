@@ -2,9 +2,7 @@
 <Container>
   <TemplateURL>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/sonarr.xml</TemplateURL>
   <Beta>False</Beta>
-  <Category>Game Servers : Ark Survival</Category>
   <Date>2020/07/06</Date>
-  <Name>Ark LGSM</Name>
   <Support></Support>
   <Description>basic ark server</Description>
   <Project>https://sonarr.tv/</Project>
@@ -13,6 +11,26 @@
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
+    <Variable>
+      <Name>SERVERNAME</Name>
+      <Value>Test Server</Value>
+    </Variable>
+    <Variable>
+      <Name>SERVERMAP</Name>
+      <Value>TheIsland</Value>
+    </Variable>
+    <Variable>
+      <Name>SERVERPASSWORD</Name>
+      <Value>Your Password</Value>
+    </Variable>
+    <Variable>
+      <Name>ADMINPASSWORD</Name>
+      <Value>Your Password</Value>
+    </Variable>
+    <Variable>
+      <Name>MAX_PLAYERS</Name>
+      <Value>30</Value>
+    </Variable>
     <Variable>
       <Name>PUID</Name>
       <Value>1000</Value>
